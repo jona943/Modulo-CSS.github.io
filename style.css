@@ -1,0 +1,9 @@
+/* RESET BÁSICO 
+   - Elimina márgenes y padding por defecto
+   - Aplica box-sizing: border-box para que el ancho incluya padding/border
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
