@@ -12,15 +12,45 @@ body {
     background-color: rgb(233, 186, 128);
 }
 
-.init {
-    background-color: brown;
-    
+.Carta-pan {
+    width: 280px;
+    background-color: aqua;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
 
 }
 
-.init .title {
-    text-align: center;
-    color: rgb(187, 162, 19);
-    background-color: rgb(41, 89, 104);
-    
+.img-pan {
+    width: 100%;
+    height: 180px;
+    border-radius: 18px;
+    object-fit: contain;
+
+}
+
+.nombre-pan {
+    font-size: 24px;
+    font-weight: bold;
+
+
+}
+
+.descripcion-pan {
+    font-size: 16px;
+    color: brown;
+}
+
+.boton-pan {
+    background-color: chocolate;
+    border-radius: 10px;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-pan:hover{
+    background-color: brown;
 }
