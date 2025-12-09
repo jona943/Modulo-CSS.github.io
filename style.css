@@ -8,10 +8,14 @@
     box-sizing: border-box;
 }
 
+
+/* COLOR DE FONDO*/
 body {
     background-color: rgb(233, 186, 128);
 }
 
+
+/* TARJETA */
 .Carta-pan {
     width: 280px;
     background-color: aqua;
@@ -21,6 +25,7 @@ body {
 
 }
 
+/* IMANGEN*/
 .img-pan {
     width: 100%;
     height: 180px;
@@ -29,11 +34,11 @@ body {
 
 }
 
+
+/* TEXTO */
 .nombre-pan {
     font-size: 24px;
     font-weight: bold;
-
-
 }
 
 .descripcion-pan {
@@ -41,6 +46,12 @@ body {
     color: brown;
 }
 
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 10px;
+}
 
 /* BOTON */
 .boton-pan {
