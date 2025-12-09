@@ -2,18 +2,35 @@
    - Elimina márgenes y padding por defecto
    - Aplica box-sizing: border-box para que el ancho incluya padding/border
 */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* #contacto {
-    background-color: brown ;
-} */
+#contacto {
+    background-color: brown;
+    padding: 10px 12px 6px 10px;
+    margin: 12px 12px 8px 12px;
 
+}
 
-/* COLOR DE FONDO*/
+section {
+    padding: 25px;
+}
+
+h2 {
+    font-size: 15px 25px;
+    margin-bottom: 10px;
+}
+
+/* BARRA DE NAVEGACION */
+.barra-nav {
+    padding: 15px 24px;
+    background-color: brown;
+} 
+
+/* CUERPO DE LA PAGINA - BODY*/
 body {
     background-color: rgb(233, 186, 128);
     font-family: "Roboto Condensed", sans-serif;
@@ -77,6 +94,6 @@ body {
     transition: 0.3s;
 }
 
-.boton-pan:hover{
+.boton-pan:hover {
     background-color: brown;
 }
