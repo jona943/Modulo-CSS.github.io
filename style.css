@@ -97,3 +97,12 @@ body {
 .boton-pan:hover {
     background-color: brown;
 }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: rgb(181, 121, 31);
+    color: rgb(104, 17, 17);
+}
