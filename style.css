@@ -28,7 +28,7 @@ h2 {
 header, main {
     width: 100%;
     max-width: 1200px;
-    margin-top: 0 auto;
+    margin: 0 auto;
 }
 
 .top-banner {
@@ -52,6 +52,7 @@ header, main {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Para centrar verticalmente los elementos */
+    z-index: 1000;
 }
 
 .barra-nav ul {
@@ -71,7 +72,7 @@ header, main {
 }
 
 .barra-nav a:hover {
-    color: #4b004b;
+    color: #7f007f;
 }
 
 /* CUERPO DE LA PAGINA - BODY*/
@@ -92,6 +93,8 @@ body {
     text-align: center;
     display: inline-block;
     transition: trasform .2s ease, box-shadow .2s ease;
+     /* Para que la badge absoluta se posicione dentro */
+    position: relative;
 }
 
 .Carta-pan:hover {
@@ -145,6 +148,17 @@ body {
     background-color: brown;
 }
 
+.producto-badge {
+    position: absolute;
+    background-color: rgb(228, 29, 29);
+    top: 10px;
+    left: 10px;
+
+    color: white;
+    padding: 5px 12px;
+    border-radius: 12px;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -154,6 +168,3 @@ footer {
     color: rgb(104, 17, 17);
 }
 
-p {
-    color: rgb(70, 6, 6);
-}
