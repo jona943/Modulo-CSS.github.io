@@ -12,6 +12,7 @@
     background-color: brown;
     padding: 10px 12px 6px 10px;
     margin: 12px 12px 8px 12px;
+    margin-top: 40px;
 
 }
 
@@ -24,11 +25,44 @@ h2 {
     margin-bottom: 10px;
 }
 
+header, main {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 0 auto;
+}
+
+.top-banner {
+    background-color: aliceblue;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 15px;
+    color: brown;
+}
+
 /* BARRA DE NAVEGACION */
 .barra-nav {
-    padding: 15px 24px;
-    background-color: brown;
+    background-color: rgb(193, 95, 95);
+    list-style: none;
+    border-radius: 2px 2px 8px 8px;
+    padding: 15px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+
 } 
+
+.barra-nav a {
+    text-decoration: none;
+    color: #4b004b;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.barra-nav a:hover {
+    color: #4b004b;
+}
 
 /* CUERPO DE LA PAGINA - BODY*/
 body {
@@ -68,18 +102,21 @@ body {
 /* TEXTO */
 .nombre-pan {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
+    margin-top: 10px;
+
 }
 
 .descripcion-pan {
     font-size: 16px;
     color: brown;
+    margin-top: 20px 22px;
 }
 
 .producto-precio {
     font-size: 20px;
     font-weight: bold;
-    color: blue;
+    color: rgb(0, 0, 128);
     margin-bottom: 10px;
 }
 
@@ -105,4 +142,8 @@ footer {
     margin-top: 30px;
     background-color: rgb(181, 121, 31);
     color: rgb(104, 17, 17);
+}
+
+p {
+    color: rgb(70, 6, 6);
 }

@@ -15,19 +15,24 @@
 </head>
 
 <body>
-    <header class="init">
-        <nav class="barra-nav">
-            <div class="title">
-                <h1>Panaderia 'La Original'</h1>
-            </div>
-            
-            <ul>
-                <li><a href="#nosostros">Nosotros</a></li>
-                <li><a href="#especialidades">Especialidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="top-banner">
+        <p>Descuento apartir de 5 piezas</p>
+
     </header>
+
+    <!--Dejando a la barra sola para aplicar Position Sticty-->
+    <nav class="barra-nav">
+        <div class="title">
+            <h1>Panaderia 'La Original'</h1>
+        </div>
+
+        <ul>
+            <li><a href="#nosostros">Nosotros</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
 
     <main>
         <section id="nosotros">
@@ -62,6 +67,8 @@
             </div>
 
             <div class="Carta-pan">
+                <!--Agregar badge de oferta Position:Absolute-->
+                <span class="producto-badge">Oferta de Temporada</span>
                 <img src="img/tipo-pan/Cuernito.jpeg" alt="Pan tipo Cuernito" class="img-pan">
                 <h3 class="nombre-pan">Cuernito</h3>
                 <p class="descripcion-pan">El cuernito es un pan hojaldrado y mantecoso, con una forma de media luna.
@@ -150,7 +157,7 @@
         <p>Síguenos en redes: Instagram @laideal · TikTok @panideal</p>
     </footer>
 
-    <a href="#catalogo" class="boton-cesta">Ver cesta 🛒</a>
+    <a href="#especialidades" class="boton-cesta">Ver cesta 🛒</a>
 </body>
 
 </html>
