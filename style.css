@@ -8,13 +8,44 @@
     box-sizing: border-box;
 }
 
-#contacto {
-    background-color: brown;
-    padding: 10px 12px 6px 10px;
-    margin: 12px 12px 8px 12px;
+/* CONTACTO EN DOS COLUMNAS*/
+.contacto-section {
+    background-color: rgb(191, 92, 92);
     margin-top: 40px;
-
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
+
+.contacto-contenido, 
+.contaco-aside{
+    flex: 1 1 280px;
+    background-color: #5a1e0f;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* FORMULARIO */
+.form-contacto{
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inputs y textarea del formulario */
+.form-contacto input,
+.form-contacto textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
 
 section {
     padding: 25px;
@@ -149,6 +180,8 @@ body {
     transition: trasform .2s ease, box-shadow .2s ease;
      /* Para que la badge absoluta se posicione dentro */
     position: relative;
+
+    flex: 1 1 240px;
 }
 
 .Carta-pan:hover {
