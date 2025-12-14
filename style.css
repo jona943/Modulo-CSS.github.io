@@ -24,13 +24,17 @@ h2 {
     font-size: 25px;
     margin-bottom: 10px;
     text-align: center;
+}
 
+p {
+    text-align: center;
 }
 
 header, main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    display: contents;
 }
 
 .top-banner {
@@ -40,6 +44,35 @@ header, main {
     padding: 6px 10px;
     font-size: 15px;
     color: brown;
+}
+
+.especialidades-title {
+    background-color: rgb(192, 117, 48);
+    padding: 20px 30px;
+    max-width: 500px;
+    border-radius: 15px;
+    justify-content: center;
+    
+}
+
+.especialidades-title h2{
+    background-color: #5a1e0f;
+    padding: 6px 10px;
+    border-radius: 10px;
+    max-width: 200px;
+    text-align: center;
+    color: azure;
+    display: flex;
+    align-content: center;
+}
+
+.especialidades-title p {
+    background-color: rgb(180, 101, 55);
+    padding: 4px 8px;
+    border-radius: 10px;
+    max-width: 270px;
+    text-align: center;
+
 }
 
 /* BARRA DE NAVEGACION */
@@ -85,6 +118,15 @@ body {
     font-family: "Roboto Condensed", sans-serif, fantasy;
 }
 
+.especialidades-contenedor {
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
 
 /* TARJETA */
 .Carta-pan {
