@@ -60,11 +60,13 @@ header, main {
 .barra-nav ul {
     display: flex; /* Para alinear los li horizontalmente */
     list-style: none; /* Elimina los puntos de la lista */
+    gap: 20px; /* Espacio entre los elementos de la lista */
+    align-items: center;
 }
 
-.barra-nav ul li {
-    margin-left: 20px; /* Espacio entre los elementos de la lista */
-} 
+/* .barra-nav ul li {
+    margin-left: 20px;
+}  */
 
 .barra-nav a {
     text-decoration: none;
