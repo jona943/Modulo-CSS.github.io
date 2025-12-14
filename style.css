@@ -1,51 +1,37 @@
-/* RESET BÁSICO 
-   - Elimina márgenes y padding por defecto
-   - Aplica box-sizing: border-box para que el ancho incluya padding/border
+/*
+    Hoja de Estilos Principal
+    -------------------------
+    Estructura:
+    1. ESTILOS GENERALES
+    2. HEADER Y NAVEGACIÓN
+    3. SECCIÓN: ESPECIALIDADES
+    4. SECCIÓN: CONTACTO
+    5. FOOTER
+    6. ELEMENTOS FLOTANTES
 */
+
+
+/* 1. ESTILOS GENERALES
+-------------------------------------------------- */
+
+/* RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* CONTACTO EN DOS COLUMNAS*/
-.contacto-section {
-    background-color: rgb(191, 92, 92);
-    margin-top: 40px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+body {
+    background-color: rgb(233, 186, 128);
+    font-family: "Roboto Condensed", sans-serif, fantasy;
 }
 
-.contacto-contenido, 
-.contaco-aside{
-    flex: 1 1 280px;
-    background-color: #5a1e0f;
-    padding: 10px;
-    border-radius: 12px;
+header, main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: contents;
 }
-
-/* FORMULARIO */
-.form-contacto{
-    background: white;
-    padding: 12px;
-    border-radius: 15px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Inputs y textarea del formulario */
-.form-contacto input,
-.form-contacto textarea{
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-
 
 section {
     padding: 25px;
@@ -61,12 +47,9 @@ p {
     text-align: center;
 }
 
-header, main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: contents;
-}
+
+/* 2. HEADER Y NAVEGACIÓN
+------------------------------------------------------- */
 
 .top-banner {
     background-color: aliceblue;
@@ -77,44 +60,6 @@ header, main {
     color: brown;
 }
 
-.especialidades-title {
-    background-color: rgb(192, 117, 48);
-    padding: 20px 30px;
-    max-width: 500px;
-    border-radius: 15px;
-
-    /* centrar bloques de pagina */
-    margin-left: auto;
-    margin-right: auto;
-
-    /* centrando contenido interno con flexbox */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    
-}
-
-.especialidades-title h2{
-    background-color: #5a1e0f;
-    padding: 6px 10px;
-    border-radius: 10px;
-    max-width: 200px;
-    text-align: center;
-    color: azure;
-    display: flex;
-}
-
-.especialidades-title p {
-    background-color: rgb(180, 101, 55);
-    padding: 4px 8px;
-    border-radius: 10px;
-    max-width: 270px;
-    text-align: center;
-
-}
-
-/* BARRA DE NAVEGACION */
 .barra-nav {
     background-color: rgb(193, 95, 95);
     border-radius: 2px 2px 8px 8px;
@@ -125,20 +70,16 @@ header, main {
     top: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Para centrar verticalmente los elementos */
+    align-items: center; 
     z-index: 1000;
 }
 
 .barra-nav ul {
-    display: flex; /* Para alinear los li horizontalmente */
-    list-style: none; /* Elimina los puntos de la lista */
-    gap: 20px; /* Espacio entre los elementos de la lista */
+    display: flex; 
+    list-style: none;
+    gap: 20px;
     align-items: center;
 }
-
-/* .barra-nav ul li {
-    margin-left: 20px;
-}  */
 
 .barra-nav a {
     text-decoration: none;
@@ -151,23 +92,52 @@ header, main {
     color: #7f007f;
 }
 
-/* CUERPO DE LA PAGINA - BODY*/
-body {
-    background-color: rgb(233, 186, 128);
-    font-family: "Roboto Condensed", sans-serif, fantasy;
+
+/* 3. SECCIÓN: ESPECIALIDADES
+-------------------------------------------------- */
+
+.especialidades-title {
+    background-color: rgb(192, 117, 48);
+    padding: 20px 30px;
+    max-width: 500px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; /* Añadido para separar del contenedor de cartas */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.especialidades-title h2 {
+    background-color: #5a1e0f;
+    padding: 6px 10px;
+    border-radius: 10px;
+    max-width: 200px;
+    text-align: center;
+    color: azure;
+}
+
+.especialidades-title p {
+    background-color: rgb(180, 101, 55);
+    padding: 4px 8px;
+    border-radius: 10px;
+    max-width: 270px;
+    text-align: center;
 }
 
 .especialidades-contenedor {
     padding: 20px;
-
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-
 }
 
-/* TARJETA */
+/* --- Tarjeta de Producto --- */
+
 .Carta-pan {
     width: 280px;
     background-color: rgb(239, 202, 79);
@@ -176,11 +146,8 @@ body {
     padding-bottom: 20px;
     box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
     text-align: center;
-    display: inline-block;
-    transition: trasform .2s ease, box-shadow .2s ease;
-     /* Para que la badge absoluta se posicione dentro */
+    transition: transform .2s ease, box-shadow .2s ease;
     position: relative;
-
     flex: 1 1 240px;
 }
 
@@ -189,22 +156,17 @@ body {
     box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15);
 }
 
-/* IMANGEN*/
 .img-pan {
     width: 100%;
     height: 180px;
     border-radius: 18px;
     object-fit: contain;
-
 }
 
-
-/* TEXTO */
 .nombre-pan {
     font-size: 24px;
     font-weight: 700;
     margin-top: 10px;
-
 }
 
 .descripcion-pan {
@@ -220,7 +182,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* BOTON */
 .boton-pan {
     background-color: chocolate;
     border-radius: 10px;
@@ -240,13 +201,53 @@ body {
     background-color: rgb(228, 29, 29);
     top: 10px;
     left: 10px;
-
     color: white;
     padding: 5px 12px;
     border-radius: 12px;
 }
 
-/* FOOTER */
+
+/* 4. SECCIÓN: CONTACTO
+-------------------------------------------------- */
+
+.contacto-section {
+    background-color: rgb(191, 92, 92);
+    margin-top: 40px;
+    padding: 20px; /* Un padding general para la sección */
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 15px; /* Añadido para consistencia */
+}
+
+.contacto-contenido, 
+.contacto-aside { /* Corregido '.contaco-aside' a '.contacto-aside' */
+    flex: 1 1 280px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.form-contacto {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+/* 5. FOOTER
+-------------------------------------------------- */
+
 footer {
     text-align: center;
     padding: 15px;
@@ -255,7 +256,9 @@ footer {
     color: rgb(104, 17, 17);
 }
 
-/* BOTON FLOTANTE Position fixed */
+
+/* 6. ELEMENTOS FLOTANTES
+-------------------------------------------------- */
 
 .boton-cesta {
     position: fixed;
@@ -270,10 +273,9 @@ footer {
     color: white;
     border-radius: 50px;
     box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
-    transition: .2s ease-out
+    transition: .2s ease-out;
 }
 
 .boton-cesta:hover {
     background-color: #7f007f;
 }
-
