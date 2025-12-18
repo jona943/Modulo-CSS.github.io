@@ -9,13 +9,14 @@
     5. FOOTER
     6. ELEMENTOS FLOTANTES
     7. SECCION EQUIPO
+    8. DISENO RESPONSIVO
 */
 
 
 /* 1. ESTILOS GENERALES
 -------------------------------------------------- */
 
-/* RESET BÁSICO */
+/* Quitamos los estilos predeterminados del navegador para empezar de cero */
 * {
     margin: 0;
     padding: 0;
@@ -136,7 +137,7 @@ p {
     justify-content: center;
 }
 
-/* --- Tarjeta de Producto --- */
+/* Estilos para cada tarjeta de pan */
 
 .Carta-pan {
     width: 280px;
@@ -222,7 +223,7 @@ p {
 }
 
 .contacto-contenido, 
-.contacto-aside { /* Corregido '.contaco-aside' a '.contacto-aside' */
+.contacto-aside { 
     flex: 1 1 280px;
     padding: 10px;
     border-radius: 12px;
@@ -307,12 +308,6 @@ footer {
 .equipo-card {
     background-color: rgb(230, 228, 108);
     width: 280px;
-
-    /* Solucion 1 centrado de imagen  */
-    /* flex-wrap: wrap;
-    display: flex;
-    justify-content: center; */
-
     /* Solucion 2 centrado de imagen  */
     display: flex;
     flex-direction: column;
@@ -358,7 +353,8 @@ footer {
 }
 
 
-/* Diseno resposivo */
+/* 8. DISENO RESPONSIVO
+-------------------------------------------------- */
 @media screen and (max-width: 1024px) {
     .barra-nav {
         padding: 12px 16px;
@@ -396,5 +392,40 @@ footer {
         flex-wrap: wrap;
     }
 
+    /* Ajustes de las tarjetas de productos para pantallas pequeñas */
+    .Carta-pan {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    /* Ajustes de tamaño de texto para pantallas pequeñas */
+    .barra-nav .title .logo { 
+        font-size: 28px;
+    }
+
+    h2 { /* General h2 */
+        font-size: 22px;
+    }
+
+    .especialidades-title h2 {
+        font-size: 20px;
+    }
+
+    .nombre-pan, .equipo-card h3 { 
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .producto-precio {
+        font-size: 18px;
+    }
+
+    /* Ajustes de espacio para pantallas pequeñas */
+    section {
+        padding: 15px; 
+    }
 }
 
