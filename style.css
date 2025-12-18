@@ -8,6 +8,7 @@
     4. SECCIÓN: CONTACTO
     5. FOOTER
     6. ELEMENTOS FLOTANTES
+    7. SECCION EQUIPO
 */
 
 
@@ -52,7 +53,6 @@ p {
 ------------------------------------------------------- */
 
 .top-banner {
-    background-color: aliceblue;
     border-radius: 0 0 5px 5px;
     text-align: center;
     padding: 6px 10px;
@@ -357,4 +357,44 @@ footer {
     line-height: 1;
 }
 
+
+/* Diseno resposivo */
+@media screen and (max-width: 1024px) {
+    .barra-nav {
+        padding: 12px 16px;
+    }
+
+    .Carta-pan {
+        flex: 1 1 260px;
+
+        }
+
+    .equipo-card {
+        width: 260px;
+
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    .top-banner {
+        font-size: 12px;
+        padding: 8px 12px;
+
+    }
+    .barra-nav {
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 12px;
+
+    }
+
+
+    .barra-nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
 
