@@ -24,6 +24,11 @@
 }
 
 body {
+    background-image: url(img/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: rgb(233, 186, 128);
     font-family: "Roboto Condensed", sans-serif, fantasy;
 }
@@ -150,6 +155,7 @@ p {
     transition: transform .2s ease, box-shadow .2s ease;
     position: relative;
     flex: 1 1 240px;
+    border: 5px solid rgb(235, 176, 68);
 }
 
 .Carta-pan:hover {
@@ -161,7 +167,9 @@ p {
     width: 100%;
     height: 180px;
     border-radius: 18px;
-    object-fit: contain;
+    object-fit: cover;
+    margin: 5% -1px;
+    border: 2px solid #5a1e0f;
 }
 
 .nombre-pan {
