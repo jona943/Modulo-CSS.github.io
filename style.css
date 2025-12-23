@@ -63,7 +63,6 @@ p {
     text-align: center;
     padding: 6px 10px;
     font-size: 15px;
-    color: rgb(228, 0, 0);
 }
 
 .barra-nav {
@@ -144,7 +143,7 @@ p {
 
 .Carta-pan {
     /* width: 280px; */
-    background-color: rgb(239, 202, 79);
+    background-color: rgba(239, 202, 79, 0.76);
     border-radius: 15px;
     overflow: hidden;
     padding-bottom: 20px;
@@ -220,8 +219,8 @@ p {
 -------------------------------------------------- */
 
 .contacto-section {
-    background-color: rgb(211, 138, 43);
-    margin-top: 40px;
+    background-color: rgba(211, 138, 43, 0.644);
+    margin: 40px;
     padding: 20px; /* Un padding general para la sección */
     display: flex;
     gap: 20px;
@@ -261,7 +260,7 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
-    background-color: rgb(221, 113, 12);
+    background-color: rgba(221, 113, 12, 0.877);
     color: rgb(104, 17, 17);
 }
 
@@ -273,7 +272,7 @@ footer {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background-color: rgb(18, 18, 180);
+    background-color: rgba(18, 18, 180, 0.788);
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
@@ -286,7 +285,7 @@ footer {
 }
 
 .boton-cesta:hover {
-    background-color: #7f007f;
+    background-color: #7f007fd2;
 }
 
 
@@ -314,7 +313,7 @@ footer {
 }
 
 .equipo-card {
-    background-color: rgb(230, 228, 108);
+    background-color: rgba(230, 228, 108, 0.733);
     width: 280px;
     /* Solucion 2 centrado de imagen  */
     display: flex;
